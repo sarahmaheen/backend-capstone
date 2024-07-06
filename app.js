@@ -28,6 +28,15 @@ app.use(cors());
 // }));
 
 
+app.use(cors({
+  origin: 'https://frontend-capstone-production.up.railway.app', // Replace with your frontend URL
+  methods: ['GET', 'POST'],
+  allowedHeaders: ['Content-Type'],
+}));
+
+
+
+
 app.use(express.json());
 
 // Routes
